@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  flex-direction: column; /* Apila los elementos verticalmente */
+  align-items: center;     /* Centra todo horizontalmente (opcional) */
+  gap: 0.5rem;              /* Espacio entre el título y los enlaces */
+  padding: 1rem;
+  background-color: rgb(33, 156, 187);
+}
+
+#course-title {
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+
+}
+nav {
+  width: 100%; /* ocupa todo el ancho */
+  display: flex;
+  justify-content: space-between; /* reparte los enlaces a lo largo */
+  padding: 0 2rem; /* espaciado interno opcional */
+  background-color: rgb(65, 179, 179);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centra el h1 horizontalmente */
+  padding: 2rem;
+}
+
+/* Centrar y estilizar el h1 */
+main h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+   width: 100vw;
+}
+
+/* Contenedor de las dos cards */
+.cards-container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  width: 100%;
+  /* max-width: 1000px; */ 
+}
+
+/* Estilo para cada card */
+.card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 0.5rem;
+}
+.card-60 {
+  flex: 0 0 40vw; 
+ 
+}
+.card-60 > div.content-wrapper {
+  display: flex;
+  align-items: center; /* centra verticalmente */
+  gap: 1rem;           /* espacio entre imagen y texto */
+}
+.card-60 img {
+  border: 3px solid #0a74da; /* borde azul */
+  border-radius: 8px;
+  max-width: 200px; /* limita tamaño */
+  height: auto;
+  object-fit: cover;
+}
+
+.card-40 > div.content-wrapi{
+  flex: 0 0 40vw; /* 40% del viewport width */
+ 
+}
+.card-40 > div.content-wrapi {
+  display: flex;
+  align-items: center; /* centra verticalmente */
+  gap: 1rem;           /* espacio entre imagen y texto */
+}
+.card-40 img {
+  border: 3px solid #0a74da; /* borde azul */
+  border-radius: 8px;
+  max-width: 200px; /* limita tamaño */
+  height: auto;
+  object-fit: cover;
+}
+
+/* h2 que ocupa todo el ancho de su card */
+.card h2 {
+  background-color: #0a74da;
+  color: white;
+  padding: 0.5rem;
+  margin: -1rem -1rem 1rem -1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  text-align: center;
+}
+footer{
+    background-color:rgb(33, 156, 187);
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
