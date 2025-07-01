@@ -24,6 +24,9 @@ nav {
   padding: 0 2rem; /* espaciado interno opcional */
   background-color: rgb(65, 179, 179);
 }
+nav a:hover {
+  color: red; /* o cualquier otro estilo */
+}
 main {
   display: flex;
   flex-direction: column;
