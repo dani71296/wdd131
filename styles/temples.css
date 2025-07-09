@@ -23,7 +23,7 @@ body {
 }
 
 header, main, footer {
-  max-width: 800px;
+  /* max-width: 800px; */
   margin: 1rem auto;
   padding: 1rem;
 }
@@ -32,14 +32,15 @@ header, main, footer {
 /* HEADER - contenedor flex para h1 y nav */
 header {
   display: flex;
-  justify-content: space-between; /* h1 a la izquierda, nav a la derecha */
-  align-items: center;            /* centrado vertical */
+  justify-content: space-between; 
+  align-items: center;            
   background-color: var(--primary-color);
   padding: 1rem 2rem;
-  border-radius: var(--border-radius);
+  /* border-radius: var(--border-radius) */;
   color: white;
-  max-width: 800px;
+  /* max-width: 800px; */
   margin: 1rem auto;
+  flex-wrap: wrap;
 }
 
 /* Ajustar el h1 dentro del header */
@@ -115,9 +116,10 @@ figcaption {
 footer {
   text-align: center;
   font-size: 0.9rem;
-  color: #555;
+  color: black;
   padding: 1rem;
   border-top: 1px solid #ccc;
+  background-color: var(--primary-color);
 }
 
 
@@ -130,9 +132,10 @@ footer {
   font-size: 1.5rem;
   background: none;
   border: none;
-  color: var(--primary-color);
+  color: white;
   cursor: pointer;
   display: block;
+  margin-left: auto;
   margin-bottom: 0.5rem;
 }
 
