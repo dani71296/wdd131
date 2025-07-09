@@ -1,0 +1,14 @@
+@media (min-width: 500px) {
+  /* Header: fondo negro y texto blanco */
+  header {
+    background-color: #000;
+    color: #fff;
+  }
+
+  /* Main: dos columnas de igual tamaño */
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}

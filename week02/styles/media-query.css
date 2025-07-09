@@ -1,0 +1,32 @@
+/* Use Roboto font for the entire page */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+}
+
+/* Common styles for header, main, and footer */
+header, main, footer {
+  max-width: 640px;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  background-color: #e0f0ff; /* blueish tone */
+  border-radius: 5px;
+}
+
+/* Make main a single-column grid with 1rem gap */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* Style individual sections */
+section {
+  padding: 1rem;
+  background-color: #ffffff; /* white or lighter background */
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
