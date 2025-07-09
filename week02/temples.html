@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Temple Album Page" />
+  <meta name="author" content="Daniel Israel Tudela Pacheco" />
+  <title>Temple Album</title>
+
+  <!-- Enlace a estilos CSS (mobile first) -->
+  <link rel="stylesheet" href="../styles/temples.css">
+  <link rel="stylesheet" href="../styles/temples-large.css">
+
+  <!-- JavaScript con defer -->
+  <script src="../scripts/temples.js" defer></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Temple Album</h1>
+    <button id="menuButton" aria-label="Toggle Menu">☰</button>
+
+    <nav id="navMenu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Old</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Large</a></li>
+            <li><a href="#">Small</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <h1>Temples Around the World</h1>
+
+    <!-- 9 Placeholder Figures -->
+    <div class="grid-container">
+        <figure>
+            <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-1636397-wallpaper.jpg" alt="Temple 1">
+            <figcaption>Temple 1</figcaption>
+        </figure>
+        <figure>
+            <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x640/accra-ghana-temple-759296-wallpaper.jpg" alt="Temple 2">
+            <figcaption>Temple 2</figcaption>
+        </figure>
+        <figure>
+        <img src="https://files.mormonsud.org/wp-content/uploads/2019/04/templo-de-dinamarca-3.jpg" alt="Temple 3">
+        <figcaption>Temple 3</figcaption>
+        </figure>
+        <figure>
+        <img src="https://files.mormonsud.org/wp-content/uploads/2019/04/lima-templo-2.jpg" alt="Temple 4">
+        <figcaption>Temple 4</figcaption>
+        </figure>
+        <figure>
+        <img src="https://files.mormonsud.org/wp-content/uploads/2019/04/frankfurt_germany_temple_lds.jpeg" alt="Temple 5">
+        <figcaption>Temple 5</figcaption>
+        </figure>
+        <figure>
+        <img src="https://files.mormonsud.org/wp-content/uploads/2019/04/suecia-templo.jpg" alt="Temple 6">
+        <figcaption>Temple 6</figcaption>
+        </figure>
+        <figure>
+        <img src="https://files.mormonsud.org/wp-content/uploads/2019/04/Taipei-Taiwan-Temple1.jpg" alt="Temple 7">
+        <figcaption>Temple 7</figcaption>
+        </figure>
+        <figure>
+        <img src="https://files.mormonsud.org/wp-content/uploads/2019/04/cardston-alberta.jpg" alt="Temple 8">
+        <figcaption>Temple 8</figcaption>
+        </figure>
+        <figure>
+        <img src="https://files.mormonsud.org/wp-content/uploads/2018/11/templo-19.jpg" alt="Temple 9">
+        <figcaption>Temple 9</figcaption>
+        </figure>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+  <p>&copy; <span id="year"></span> Daniel Israel Tudela Pacheco | WDD 131</p>
+  <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+
+
+</body>
+</html>
