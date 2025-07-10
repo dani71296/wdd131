@@ -28,7 +28,7 @@ header, main, footer {
   padding: 1rem;
 }
 
-/* HEADER */
+
 /* HEADER - contenedor flex para h1 y nav */
 header {
   display: flex;
@@ -50,7 +50,7 @@ header h1 {
   color: white; /* para verse bien sobre fondo oscuro */
 }
 
-/* Nav ul ya no necesita background ni border-radius */
+
 nav ul {
   display: flex;
   justify-content: flex-end; /* Alinea links a la derecha */
@@ -124,7 +124,7 @@ footer {
 
 
 
-/* hambrguesa */
+/* Hambrguesa */
 
 
 /* Hide menu button on large view */
