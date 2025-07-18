@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Country Info</title>
+
+  <!-- CSS para móvil (default) -->
+  <link rel="stylesheet" href="./styles/place.css" />
+
+  <!-- CSS para desktop -->
+  <link rel="stylesheet" href="./styles/place-large.css" media="(min-width: 768px)" />
+  <script src="./scripts/place.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Country Info</h1>
+  </header>
+
+  <main>
+    <img src="./images/llama.webp" alt="Hero Image" class="hero" />
+
+    <section class="country-data">
+      <p><strong>Area:</strong> <span id="area"></span></p>
+      <p><strong>Population:</strong> <span id="population"></span></p>
+      <p><strong>Capital:</strong> <span id="capital"></span></p>
+      <p><strong>Languages:</strong> <span id="languages"></span></p>
+      <p><strong>Currency:</strong> <span id="currency"></span></p>
+      <p><strong>Time Zone:</strong> <span id="timezone"></span></p>
+      <p><strong>Calling Code:</strong> <span id="callingcode"></span></p>
+      <p><strong>Internet TLD:</strong> <span id="tld"></span></p>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+      <img src="/images/clima.webp" alt="Weather icon" id="weather-icon" />
+      <p><strong>Temperature:</strong> <span id="temperature"></span></p>
+      <p><strong>Conditions:</strong> <span id="conditions"></span></p>
+      <p><strong>Wind:</strong> <span id="wind"></span></p>
+      <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Israel Tudela - Bolivia</p>
+    <p>Last Modification: <span id="last-modified"></span></p>
+  </footer>
+</body>
+</html>

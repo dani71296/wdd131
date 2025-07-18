@@ -1,0 +1,66 @@
+/* place.css - estilo móvil básico */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+  background-color: #f9f9f9;
+  color: #333;
+  
+}
+
+header {
+  width: 100vw;         /* Ocupa todo el ancho de la ventana */
+  background-color: rgb(154, 154, 228);
+  text-align: center;
+  margin-bottom: 1rem;
+  color: black;         /* Para que el texto se vea bien sobre azul */
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.hero {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.country-data, .weather {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.country-data p, .weather p {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+}
+
+.weather h2 {
+  margin-bottom: 0.8rem;
+  font-size: 1.5rem;
+}
+
+.weather img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0.6rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+  margin-top: 2rem;
+}
