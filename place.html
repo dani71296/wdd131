@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" >
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Country info page showing data and weather details for a selected country.">
+  <meta name="author" content="Israel Tudela Pacheco">
   <title>Country Info</title>
-
-  <!-- CSS para móvil (default) -->
-  <link rel="stylesheet" href="./styles/place.css" >
-
-  <!-- CSS para desktop -->
-  <link rel="stylesheet" href="./styles/place-large.css" media="(min-width: 768px)" >
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/place.css">
+  <link rel="stylesheet" href="./styles/place-large.css" media="(min-width: 768px)">
   <script src="./scripts/place.js" defer></script>
 </head>
 <body>
@@ -19,7 +18,13 @@
   </header>
 
   <main>
-    <img src="./images/llama.webp" alt="Hero Image" class="hero" />
+    <img 
+        src="./images/llama.webp"
+        srcset="./images/llama.webp 480w, ./images/alpaca.webp 768w"
+        sizes="(min-width: 768px) 100vw, 100vw"
+        alt="Hero Image"
+        class="hero" />
+
 
     <section class="country-data">
       <p><strong>Area:</strong> <span id="area"></span></p>

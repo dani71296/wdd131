@@ -1,4 +1,10 @@
-/* place.css - estilo móvil básico */
+/* Variables globales */
+:root {
+  --color-primary: #0055ff;
+  --color-secondary: #333333;
+  --font-family-base: 'Roboto', Arial, sans-serif;
+  --spacing-base: 1rem;
+}
 
 * {
   box-sizing: border-box;
@@ -7,48 +13,57 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: var(--font-family-base);
+  color: var(--color-secondary);
   line-height: 1.4;
   background-color: #f9f9f9;
-  color: #333;
+  padding: var(--spacing-base);
 }
 
-/* Hero visible solo en móvil */
-.hero {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin-bottom: 1rem;
-}
-
+/* Header con ::after para línea decorativa */
 header {
-    width: 100%;
-    background-color: blue;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-  }
+  background-color: var(--color-primary);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: var(--color-secondary);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
 
 header h1 {
   font-size: 1.8rem;
   font-weight: bold;
 }
 
+/* Imagen hero móvil */
 .hero {
   display: block;
   width: 100%;
   height: auto;
   margin-bottom: 1rem;
+  object-fit: cover;
 }
 
-.country-data, .weather {
-  text-align: center;
+.country-data,
+.weather {
+  background-color: white;
+  padding: 1rem;
   margin-bottom: 2rem;
-}
-
-.country-data p, .weather p {
-  margin: 0.4rem 0;
-  font-size: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  max-width: 300px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .weather h2 {
