@@ -11,16 +11,23 @@ body {
   line-height: 1.4;
   background-color: #f9f9f9;
   color: #333;
-  
+}
+
+/* Hero visible solo en móvil */
+.hero {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
 }
 
 header {
-  width: 100vw;         /* Ocupa todo el ancho de la ventana */
-  background-color: rgb(154, 154, 228);
-  text-align: center;
-  margin-bottom: 1rem;
-  color: black;         /* Para que el texto se vea bien sobre azul */
-}
+    width: 100%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
 
 header h1 {
   font-size: 1.8rem;
@@ -31,7 +38,6 @@ header h1 {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 8px;
   margin-bottom: 1rem;
 }
 
