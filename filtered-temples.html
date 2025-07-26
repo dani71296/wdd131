@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Temple Album Page" />
+  <meta name="author" content="Daniel Israel Tudela Pacheco" />
+  <title>Temple Album</title>
+
+  <!-- Enlace a estilos CSS (mobile first) -->
+  <link rel="stylesheet" href="./styles/filtered-temples.css" />
+  <link rel="stylesheet" href="./styles/filtered-temples-large.css" />
+
+  <!-- JavaScript con defer -->
+  <script src="./scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Temple Album</h1>
+    <button id="menuButton" aria-label="Toggle Menu">☰</button>
+
+    <nav id="navMenu">
+      <ul>
+        <li><a href="#" id="filterHome">Home</a></li>
+        <li><a href="#" id="filterOld">Old</a></li>
+        <li><a href="#" id="filterNew">New</a></li>
+        <li><a href="#" id="filterLarge">Large</a></li>
+        <li><a href="#" id="filterSmall">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <h2>Temples Around the World</h2>
+
+    <!-- Contenedor donde se insertarán las tarjetas dinámicamente -->
+    <div id="templesContainer" class="grid-container">
+      <!-- Aquí se crean las tarjetas con JS -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Daniel Israel Tudela Pacheco | WDD 131</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+</body>
+</html>
+
