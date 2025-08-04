@@ -1,0 +1,28 @@
+:root {
+  --primary-color: #2C3E50;
+  --accent-color: #E74C3C;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 2rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1, h2 {
+  color: var(--primary-color);
+}
+
+header, footer {
+  text-align: center;
+}
+
+.color-box {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  margin-left: 5px;
+  vertical-align: middle;
+}
