@@ -6,6 +6,10 @@
   <meta name="description" content="form page">
   <meta name="author" content="Daniel Israel Tudela Pacheco">
   <title>Product Review Form</title>
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="./styles/styles-mobile.css">
   <link rel="stylesheet" href="./styles/styles-desktop.css">
   <script src="./scripts/script.js" defer></script>
@@ -19,50 +23,71 @@
       <label for="product">Producto:</label>
       <select id="product" name="product" required>
         <option disabled selected value="">Select a Product ...</option>
-        <!-- Opciones dinámicas aquí -->
       </select>
 
-      <!-- Overall Rating -->
-            <!-- Date of Installation -->
+      <!-- Date of Installation -->
       <label for="installDate">Fecha de instalación:</label>
       <input type="date" id="installDate" name="installDate" required />
 
-       <!-- Overall Rating -->
+      <!-- Overall Rating -->
       <fieldset class="star-rating">
         <legend>Calificación general:</legend>
 
         <div class="rating-option">
-            <div class="stars">★</div>
-            <input type="radio" id="rate1" name="rating" value="1" required />
-            <label for="rate1">1</label>
+          <div class="stars">★</div>
+          <input type="radio" id="rate1" name="rating" value="1" required />
+          <label for="rate1">1 estrella</label>
         </div>
 
         <div class="rating-option">
-            <div class="stars">★★</div>
-            <input type="radio" id="rate2" name="rating" value="2" />
-            <label for="rate2">2</label>
+          <div class="stars">★★</div>
+          <input type="radio" id="rate2" name="rating" value="2" />
+          <label for="rate2">2 estrellas</label>
         </div>
 
         <div class="rating-option">
-            <div class="stars">★★★</div>
-            <input type="radio" id="rate3" name="rating" value="3" />
-            <label for="rate3">3</label>
+          <div class="stars">★★★</div>
+          <input type="radio" id="rate3" name="rating" value="3" />
+          <label for="rate3">3 estrellas</label>
         </div>
 
         <div class="rating-option">
-            <div class="stars">★★★★</div>
-            <input type="radio" id="rate4" name="rating" value="4" />
-            <label for="rate4">4</label>
+          <div class="stars">★★★★</div>
+          <input type="radio" id="rate4" name="rating" value="4" />
+          <label for="rate4">4 estrellas</label>
         </div>
 
         <div class="rating-option">
-            <div class="stars">★★★★★</div>
-            <input type="radio" id="rate5" name="rating" value="5" />
-            <label for="rate5">5</label>
+          <div class="stars">★★★★★</div>
+          <input type="radio" id="rate5" name="rating" value="5" />
+          <label for="rate5">5 estrellas</label>
         </div>
-    </fieldset>
+      </fieldset>
 
+      <!-- Checkbox Options -->
+      <fieldset>
+        <legend>¿Qué te gustó del producto?</legend>
 
+        <div>
+          <input type="checkbox" id="feature1" name="features" value="durability">
+          <label for="feature1">Durabilidad</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="feature2" name="features" value="design">
+          <label for="feature2">Diseño</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="feature3" name="features" value="price">
+          <label for="feature3">Precio</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="feature4" name="features" value="functionality">
+          <label for="feature4">Funcionalidad</label>
+        </div>
+      </fieldset>
 
       <!-- Written Review -->
       <label for="reviewText">Reseña escrita:</label>
@@ -77,11 +102,10 @@
     </form>
   </main>
 
-   <footer>
+  <footer>
     <p>&copy; <span id="year"></span> Daniel Israel Tudela Pacheco | WDD 131</p>
     <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
-
-  
 </body>
 </html>
+
