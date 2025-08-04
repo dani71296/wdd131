@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="./styles/styles-mobile.css" />
+  <link rel="stylesheet" href="./styles/styles-desktop.css" />
+  <script src="./scripts/script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Formulario de reseña de producto</h1>
+    <form method="get" action="review.html" id="reviewForm">
+
+      <!-- Product Name Select -->
+      <label for="product">Producto:</label>
+      <select id="product" name="product" required>
+        <option disabled selected value="">Select a Product ...</option>
+        <!-- Opciones dinámicas aquí -->
+      </select>
+
+      <!-- Overall Rating -->
+            <!-- Date of Installation -->
+      <label for="installDate">Fecha de instalación:</label>
+      <input type="date" id="installDate" name="installDate" required />
+
+       <!-- Overall Rating -->
+      <fieldset class="star-rating">
+        <legend>Calificación general:</legend>
+
+        <div class="rating-option">
+            <div class="stars">★</div>
+            <input type="radio" id="rate1" name="rating" value="1" required />
+            <label for="rate1">1</label>
+        </div>
+
+        <div class="rating-option">
+            <div class="stars">★★</div>
+            <input type="radio" id="rate2" name="rating" value="2" />
+            <label for="rate2">2</label>
+        </div>
+
+        <div class="rating-option">
+            <div class="stars">★★★</div>
+            <input type="radio" id="rate3" name="rating" value="3" />
+            <label for="rate3">3</label>
+        </div>
+
+        <div class="rating-option">
+            <div class="stars">★★★★</div>
+            <input type="radio" id="rate4" name="rating" value="4" />
+            <label for="rate4">4</label>
+        </div>
+
+        <div class="rating-option">
+            <div class="stars">★★★★★</div>
+            <input type="radio" id="rate5" name="rating" value="5" />
+            <label for="rate5">5</label>
+        </div>
+    </fieldset>
+
+
+
+      <!-- Written Review -->
+      <label for="reviewText">Reseña escrita:</label>
+      <textarea id="reviewText" name="reviewText" rows="4" placeholder="Escribe tu reseña aquí..."></textarea>
+
+      <!-- User Name -->
+      <label for="userName">Tu nombre (opcional):</label>
+      <input type="text" id="userName" name="userName" />
+
+      <!-- Submit -->
+      <input type="submit" value="Enviar reseña" />
+    </form>
+  </main>
+
+   <footer>
+    <p>&copy; <span id="year"></span> Daniel Israel Tudela Pacheco | WDD 131</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  
+</body>
+</html>

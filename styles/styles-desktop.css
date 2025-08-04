@@ -1,0 +1,38 @@
+/* Solo aplica para pantallas de escritorio (desktop) */
+@media (min-width: 768px) {
+  main {
+    max-width: 700px;
+    padding: 2rem;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 2rem;
+    align-items: start;
+  }
+
+  /* Etiquetas ocupan columna completa */
+  label, legend {
+    grid-column: span 2;
+  }
+
+  /* Inputs y textarea ocupan una columna */
+  input[type="text"],
+  input[type="date"],
+  select,
+  textarea {
+    grid-column: span 2;
+  }
+
+  fieldset {
+    grid-column: span 2;
+  }
+
+  /* Submit ocupa ambas columnas y centrado */
+  input[type="submit"] {
+    grid-column: span 2;
+    width: 50%;
+    justify-self: center;
+  }
+}
