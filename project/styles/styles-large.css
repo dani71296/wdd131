@@ -1,0 +1,67 @@
+/* --------------------- */
+/* MEDIA QUERIES */
+/* --------------------- */
+
+/* Móvil portrait: menos de 768px */
+@media (max-width: 767px) {
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    background-color: #222;
+    height: calc(100% - 60px);
+    width: 200px;
+    flex-direction: column;
+    padding-top: 1rem;
+    transition: right 0.3s ease;
+    z-index: 999;
+  }
+
+  .nav-links.show {
+    right: 0;
+  }
+
+  .nav-links li {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Ajustar cards intro a columna */
+  .intro-links .cards {
+    flex-direction: column;
+  }
+
+  /* Ajustar grid tipos a una columna */
+  .types-list {
+    display: block;
+  }
+
+  .type-card {
+    margin-bottom: 1rem;
+  }
+
+  main {
+    margin: 1rem;
+    padding: 0 1rem;
+  }
+}
+
+/* Desktop: desde 768px en adelante */
+@media (min-width: 768px) {
+  /* Menu visible siempre */
+  .nav-links {
+    position: static;
+    height: auto;
+    flex-direction: row;
+    background: none;
+    width: auto;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}

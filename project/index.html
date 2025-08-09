@@ -1,0 +1,65 @@
+<!-- index.html - Página Home -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - World Motorcycles</title>
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <link rel="stylesheet" href="./styles/styles-large.css" />
+  <script src="./scripts/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Motorcycles World</div>
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="tipos.html">Types of Bikes</a></li>
+        <li><a href="mecanica.html">Mechanic & Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to the Motorcycles World</h1>
+      <p>Your place to learn about motorcycle types, basic mechanics, and helpful tips.</p>
+      <img src="./images/rebikepat.webp" alt="Motocicleta en carretera" loading="lazy" />
+    </section>
+
+    <section class="intro-links">
+  <h2>Explore our content</h2>
+  <div class="cards">
+    <article class="card">
+      <img src="./images/tipos.webp" alt="Tipos de motocicletas" loading="lazy" />
+      <h3><a href="tipos.html">Types of Motorcycles</a></h3>
+      <p>Learn about the different categories of motorcycles and their characteristics.</p>
+    </article>
+    <article class="card">
+      <img src="./images/mecanicamotos.webp" alt="Mecánica básica de motos" loading="lazy" />
+      <h3><a href="mecanica.html">Basic Mechanics & Contact</a></h3>
+      <p>Learn basic maintenance and contact us for questions and services.</p>
+    </article>
+  </div>
+</section>
+  </main>
+
+  <footer>
+  <nav class="footer-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tipos.html">Types of Bikes</a></li>
+      <li><a href="mecanica.html">Mechanics & Contact</a></li>
+      <li><a href="referencias.html">References</a></li>
+    </ul>
+  </nav>
+  <p>&copy; <span id="year"></span> Motorcycles World. All rights reserved.</p>
+  <p>Last modificatión: <span id="lastModified"></span></p>
+</footer>
+
+
+  
+</body>
+</html>

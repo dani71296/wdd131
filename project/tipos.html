@@ -1,0 +1,73 @@
+<!-- tipos.html - Tipos de Motos -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tipos de Motos - Mundo Motocicletas</title>
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <link rel="stylesheet" href="./styles/styles-large.css" />
+  <script src="./scripts/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Motorcycles World</div>
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="tipos.html">Types of Bikes</a></li>
+        <li><a href="mecanica.html">Mechanic & Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="types-intro">
+      <h1>Tipos de Motocicletas</h1>
+      <p>Existen diversas categorías según su uso y diseño. Aquí te contamos las principales:</p>
+    </section>
+
+    <section class="types-list">
+      <article class="type-card">
+        <h2>Motocicletas Deportivas</h2>
+        <img src="./images/depormot.webp" alt="Motocicleta deportiva" loading="lazy" />
+        <p>Diseñadas para velocidad y maniobrabilidad. Ideales para circuitos y conducción ágil.</p>
+      </article>
+
+      <article class="type-card">
+        <h2>Motocicletas Cruiser</h2>
+        <img src="images/cruiser.webp" alt="Motocicleta cruiser" loading="lazy" />
+        <p>Confortables y de estilo clásico, perfectas para viajes largos y paseos relajados.</p>
+      </article>
+
+      <article class="type-card">
+        <h2>Motocicletas Touring</h2>
+        <img src="images/goldwing.webp" alt="Motocicleta touring" loading="lazy" />
+        <p>Equipadas para largos recorridos con espacio para equipaje y gran comodidad.</p>
+      </article>
+
+      <article class="type-card">
+        <h2>Scooters</h2>
+        <img src="images/vespa.webp" alt="Scooter" loading="lazy" />
+        <p>Compactas y fáciles de manejar, ideales para ciudad y desplazamientos cortos.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+  <nav class="footer-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tipos.html">Types of Bikes</a></li>
+      <li><a href="mecanica.html">Mechanics & Contact</a></li>
+      <li><a href="referencias.html">References</a></li>
+    </ul>
+  </nav>
+  <p>&copy; <span id="year"></span> Motorcycles World. All rights reserved.</p>
+  <p>Last modificatión: <span id="lastModified"></span></p>
+</footer>
+
+
+</body>
+</html>
